@@ -17,15 +17,16 @@ There are prerequisites for this program to work
 Moving on, open the project file **NOT THE SRC FILE BUT THE FILE CONTAINING THE SRC FILE** in a terminal
 
 For example:
-If our src file was stored in another file named **TEST**, we would have to have the current directory be set as test
+If our src file was stored in another file named **TEST**, we would have to have the current directory be set as **TEST**
 
 
-**autofile.java** must be ran first in order to create a database taht gui.java would access
+**autofile.java** must be ran first in order to create a database that gui.java would later access
 - This is done through running the command ``java -cp src/mysql-connector-j-8.0.33.jar src/autofile.java`` in the terminal
 
-This should then prompt the user to enter in the login information of the sql user to be accessed in addition to the database that is to be modified
+This should then prompt the user to enter the login information of the sql user to be accessed in addition to the database that is to be modified
 
 After this, the program should then run and the database will have a new table named "Cars" filled within the information from the autonote.txt file
+
 
 In order to run the GUI program, we run a similar command but instead of using the autofile.java, we use gui.java:
 ``java -cp src/mysql-connector-j-8.0.33.jar src/gui.java``
