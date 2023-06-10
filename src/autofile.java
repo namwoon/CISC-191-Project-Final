@@ -78,7 +78,7 @@ public class autofile {
             origin = (int) scan.nextFloat();
             name = scan.next() + scan.nextLine();
 
-            String sql = ("insert into cars (mpg, cylinders, displacement, horsepower, weight, acceleration, modelYear, origin, carName)" +
+            String sql = ("insert into Cars (mpg, cylinders, displacement, horsepower, weight, acceleration, modelYear, origin, carName)" +
                     "values(\""+ mpg+"\","+cyl+","+displacement+",\""+hp+"\","+weight+","+acel+","+year+","+origin+","+name+");");
             System.out.println(sql);
             statement.execute(sql);
